@@ -1,0 +1,44 @@
+.section-sm {
+  padding-block: var(--spacing-6);
+}
+
+.section {
+  padding-block: var(--spacing-12);
+}
+
+.section-lg {
+  padding-block: var(--spacing-24);
+}
+
+.section-xl {
+  padding-block: var(--spacing-36);
+}
+
+
+.pancake-stack{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.container {
+    --padding: 32px;
+    padding: 0 var(--padding);
+    width: 100%;;
+    max-width: var(--width-7xl);
+    margin: 0 auto;
+}
+
+/* add media queries for container */
+
+@media (max-width: 48rem) { /* 768px  md*/
+  .container {
+    --padding: 24px;
+  }
+} 
+
+@media (max-width: 40rem) { /* 640px  sm */
+  .container {
+    --padding: 16px;
+  }
+}
+
+

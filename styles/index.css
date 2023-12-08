@@ -1,0 +1,36 @@
+
+/* Settings */
+
+@import url("1-settings/colors.css");
+@import url("1-settings/typography.css");
+@import url("1-settings/spacing.css");
+@import url("1-settings/width.css");
+@import url("1-settings/border.css");
+@import url("1-settings/breakpoints.css");
+
+/* generic */
+
+@import url("2-generic/reset.css");
+
+/* elements */
+
+@import url("3-elements/elements.css");
+
+/* objects */
+
+@import url("4-objects/objects.css");
+
+/* components */
+@import url("5-components/header.css");
+@import url("5-components/button.css");
+@import url("5-components/hero.css");
+@import url("5-components/link.css");
+@import url("5-components/feature.css");
+@import url("5-components/footer.css");
+@import url("5-components/testimonial.css");
+@import url("5-components/pricing.css");
+@import url("5-components/article.css");
+@import url("5-components/table.css");
+
+/* utilities */
+@import url("6-utilities/utilities.css");
