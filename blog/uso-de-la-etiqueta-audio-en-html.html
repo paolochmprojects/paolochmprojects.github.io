@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codificable - Blog: Conoce los elementos básicos de HTML</title>
+    <!-- <link rel="stylesheet" href="/style.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Source+Code+Pro:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__logo"><a href="/index.html">Codificable</a></h1>
+
+        <nav class="navigation">
+          <ul>
+            <li><a class="nav-link" href="/blog/index.html">Blog</a></li>
+            <li><a class="nav-link" href="#">Sobre nosotros</a></li>
+          </ul>
+        </nav>
+        <div class="buttons">
+          <a class="button" href="#">Login</a>
+          <img
+            id="toggle"
+            src="/assets/icons/burger-toggle.svg"
+            alt="Menu toggle icon"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="section">
+        <div class="container">
+          <article class="article">
+            <header class="article__header">
+              <div class="article-metadata">
+                <span class="article-metadata__date">08 Diciembre 2023</span>
+                <span class="category-tag">Principiante</span>
+              </div>
+              <div class="author">
+                <img
+                  src="/assets/images/paolo_charca.jpeg"
+                  alt="Paolo Charca Avatar"
+                  class="author__avatar"
+                />
+                <div class="author__info">
+                  <strong class="author__name">Paolo Charca M.</strong>
+                  <span>Backend Developer - Hotei</span>
+                </div>
+              </div>
+            </header>
+            <div class="article__content">
+              <h1>Uso de la etiqueta <code>&lt;audio&gt;</code> en HTML</h1>
+              <div class="article-image--full">
+                <img
+                  src="/assets/images/post_img_audio.jpeg"
+                  alt="Phone taking picture of meal"
+                />
+              </div>
+              <p>
+                La etiqueta de <code>&lt;audio&gt;</code> permite incrustar
+                archivos de audio en una página web de manera sencilla y
+                accesible. Al utilizar esta etiqueta, los desarrolladores web
+                pueden ofrecer a los usuarios una experiencia auditiva
+                enriquecedora sin depender de reproductores externos. tiene
+                ciertas caradcteristicas como:
+              </p>
+              <h2>Facilidad de Uso y Accesibilidad</h2>
+              <p>
+                <code>&lt;audio&gt;</code> es compatible con varios formatos de
+                archivo como:
+              </p>
+              <ul>
+                <li>MP3.</li>
+                <li>WAG.</li>
+                <li>OGG.</li>
+              </ul>
+              <p>
+                garantizando una reproducción fluida en diferentes navegadores.
+              </p>
+              <h2>Control de Reproducción y Versatilidad</h2>
+              <p>
+                Los desarrolladores pueden controlar la reproducción del audio
+                mediante atributos como "autoplay", "loop" y "controls",
+                ofreciendo una experiencia personalizada a los usuarios.
+              </p>
+              <h2>
+                Compatibilidad con la Etiqueta <code>&lt;source&gt;</code>
+              </h2>
+              <p>
+                La etiqueta <code>&lt;audio&gt;</code> es compatible con
+                <code>&lt;source&gt;</code>,
+                <em> permitiendo especificar múltiples fuentes de audio </em>
+                para garantizar la compatibilidad con diferentes navegadores y
+                dispositivos.
+              </p>
+              <h2>Implemetando la etiqueta audio</h2>
+              <p>
+                Para implementar la etiqueta <code>&lt;audio&gt;</code> en tu
+                página, debes incluir el atributo <code>src</code> con la URL
+                del archivo de audio que deseas mostrar. También puedes incluir
+                el atributo <code>controls</code> para mostrar los controles de
+                reproducción.
+              </p>
+
+              <h3>Usando solo la etiqueta audio</h3>
+              <pre><code>&lt;audio src="/path-to-audio" controls&gt;&lt;/audio&gt;</code></pre>
+              <audio src="/assets/audio/audio.mp3" controls></audio>
+
+              <h3>Incluyendo la etiqueta source dentro de audio</h3>
+              <pre><code>&lt;audio controls&gt;
+    &lt;source src="/path-to-audio"/&gt;
+&lt;/audio&gt;</code></pre>
+              <audio controls>
+                <source src="/assets/audio/audio.mp3" type="audio/mpeg" />
+              </audio>
+              <h2>
+                Hora de soprender a tus usuarios con la nueva tonada del año!!!
+              </h2>
+              <p>
+                Con esta pequeña descripción ya puedes agregar audio dentro de
+                tu sitio web, espero que te haya sido de ayuda, si aun te queda
+                dudas puede consultar más a detalle en la
+                <a
+                  href="https://developer.mozilla.org/es/docs/Web/HTML/Element/audio"
+                  >doumentación</a
+                >, recuerda:
+              </p>
+              <blockquote>
+                "La mayor parte de las grandes cosas que ha conseguido el
+                hombre, fueron declaradas imposibles antes de que alguien las
+                hiciera"
+                <cite>Louis D. Brandeis</cite>
+              </blockquote>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container footer">
+      <div class="section">
+        <ul class="footer__links">
+          <li>Link 1</li>
+          <li>Link 2</li>
+          <li>Link 3</li>
+          <li>Link 4</li>
+          <li>Link 5</li>
+        </ul>
+        <ul class="social-links">
+          <li>
+            <a href="#"
+              ><img src="/assets/icons/facebook.svg" alt="Facebook icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/assets/icons/linkedin.svg" alt="LinkedIn icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/assets/icons/twitter.svg" alt="Twitter icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/assets/icons/github.svg" alt="GitHub icon"
+            /></a>
+          </li>
+        </ul>
+        <p class="footer__copy">
+          &copy; 2023 Codificable - Todos los derechos reservados
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

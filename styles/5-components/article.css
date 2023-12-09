@@ -105,6 +105,34 @@
     overflow: auto;
 }
 
+.article__content audio {
+    width: 100%;
+    margin-block: var(--spacing-8);
+
+}
+
+.article__content blockquote {
+    margin-block: var(--spacing-8);
+    padding: var(--spacing-4);
+    background-color: var(--muted);
+    border-radius: var(--rounded-md);
+    font-style: italic;
+    color: var(--muted-foreground);
+    text-align: center;
+}
+
+.article__content cite {
+    display: block;
+    margin-top: var(--spacing-4);
+    font-weight: 600;
+    text-align: right;
+    line-height: var(--leading-6);
+}
+
+.article__content cite::before {
+    content: "— ";
+}
+
 .article__content pre > code::after,
 .article__content pre > code::before {
     content: none;
