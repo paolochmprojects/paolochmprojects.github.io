@@ -1,5 +1,4 @@
 .pricing2 {
-  width: 100%;
   border-radius: var(--rounded-3xl);
   border: 1px solid var(--border);
   display: grid;
@@ -105,28 +104,23 @@
 /* 1024px lg 64rem */
 /* 1280px xl 80rem */
 
+@media (max-width: 48rem) {
+  .pricing2 {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-6);
+    margin-inline: var(--spacing-6);
+  }
+}
+
 @media (max-width: 40rem) {
   .pricing2 {
     grid-template-columns: 1fr;
+    gap: var(--spacing-3);
+    margin-inline: var(--spacing-0);
   }
-
-  .pricing2__right-panel {
-    margin: var(--spacing-1_5) 0;
-  }
-   
   .pricing2-feature__list {
     grid-template-columns: 1fr;
-    padding-inline: var(--spacing-6);
     justify-items: left;
   }
 }
 
-@media (max-width: 48rem) {
-  .pricing2 {
-    grid-template-columns: 1fr;
-  }
-
-  .pricing2__right-panel {
-    margin: var(--spacing-1_5);
-  }
-}
